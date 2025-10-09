@@ -1,0 +1,150 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* ativação do flex para todos os containers */
+/* container flex e itens flex */
+.container-flex {
+    display: flex;
+    background-color: purple;
+    gap: 10px;
+}
+.item-flex {
+    background-color: orange;
+    padding: 20px;
+}
+
+/* 2. Direção do Flex  (Linha-Padrão) */
+.direcao-lina {
+    flex-direction: row;
+}
+.direcao-coluna {
+    flex-direction: column;
+}
+
+/* 3. Quebra de linha (responsividade) */
+.quebra-linha {
+    flex-wrap: wrap;
+}
+.nowrap {
+    flex-wrap: nowrap; /* padrão */
+}
+/* 4. Alinhamento Horizontal */
+.justificar-inicio {
+    justify-content: flex-start; /* padrão */
+}
+.justificar-fim {
+    justify-content: flex-end;
+}
+.justificar-centro {
+    justify-content: center;
+}
+.justificar-between {
+    justify-content: space-between;
+}
+.justificar-space-evenly {
+    justify-content: space-evenly;
+}
+/* 5. Altura dos Containers */
+.alinhar-itens, .container-flex {
+    height: 300px;
+}
+.alinhar-stretch {
+    align-items: stretch; /* padrão */
+}
+.alinhar-inicio {
+    align-items: flex-start;
+}
+.alinhar-fim {
+    align-items: flex-end;
+}
+.alinhar-centro {
+    align-items: center;
+}
+.alinhar-baseline {
+    align-items: baseline;
+}
+/* 5.1 Alinhamento Vertical */
+.alinhar-conteudo{
+    align-content: space-between;
+    height: 600px;
+}
+.alinhar-conteudo .caixa  {
+    flex: 0 0 30px;
+}
+.ordem1 {
+    order: 1;
+}
+.ordem2 {
+    order: 2;
+}
+.ordem3 {
+    order: 3;
+}
+.exemplo-grow .item-flex {
+    flex-grow: 100px;
+}
+.crescer1 {
+    flex-grow: 1;
+}
+.crescer2 {
+    flex-grow: 2;
+}
+.alinhar-items-individuais .container-flex {
+    height: 300px;
+}
+.self-inicio {
+    align-self: flex-start;
+}
+.self-centro {
+    align-self: center;
+}
+.self-fim {
+    align-self: flex-end;
+}
+.menu-nav {
+    background-color: black;
+    height: 50px;
+}
+.menu-inicio {
+    align-self: flex-start;
+}
+.menu-centro {
+    align-self: center;
+}
+.menu-fim {
+    align-self: flex-end;
+}   
+.menu-nav {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.menu-nav a:hover {
+  background: #e5e5e5;
+  color: #000;
+}

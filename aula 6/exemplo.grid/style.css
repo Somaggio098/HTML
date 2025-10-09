@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 40px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  text-align: center;
+  
+}
+.grid-container {
+    display: grid;
+    background-color: #eee;
+    padding: 10px;
+    gap: 10px;
+}
+
+.item-grid {
+    background-color: #2196f3;
+    color: white;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 5px;
+}
+.basico {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+}
+.repeat-minmax {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-auto-flow: 100px;
+    grid-gap: 20px;
+}
+.auto-fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 100px;
+    grid-gap: 20px;
+}
+.sobreposicao {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
+.item1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.item2 {
+    grid-column: 2 / 4;
+}
+.item3 {
+    grid-column: 1 / 4;
+}
+.item4 {
+    grid-column: 3 / 4;
+}
+.areas-nomeadas {
+    grid-template-areas:
+    "cabecalho cabecalho"
+    "menu conteudo"
+    "rodape rodape";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-gap: 10px; 
+}
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: #4caf50;
+}
+.menu {
+    grid-area: menu;
+    background-color: #2196f3;
+}
+.conteudo {
+    grid-area: conteudo;
+    background-color: #f44336;
+}
+.rodape {
+    grid-area: rodape;
+    background-color: #9c27b0;
+}
+.grid-antinhado {
+    grid-template-columns: rapeat(2, 1fr);
+    grid-gap: 10px;
+}
+.grid-aninhado {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.subgrid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+.subitem-grid {
+    background-color: #ff9800;
+    padding: 10px;
+    color:#fff;
+}
+.layout-pagina {
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px; 
+}
+.header {
+    grid-area: header;
+    background-color: #3f51b5;
+}
+.nav {
+    grid-area: nav;
+    background-color: #f44336;
+    height: 400px;
+}
+.aside {
+    grid-area: aside;
+    background-color: #ff9800;
+    height: 400px;
+}
+.main {
+    grid-area: main;
+    background-color: #2196f3;
+    height: 400px;
+}
+.footer {
+    grid-area: footer;
+    background-color: #4caf50;
+
+}
